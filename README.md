@@ -15,6 +15,8 @@ needed, so simple questions stay simple.</p>
 unreliable output, repeated rework or tasks with side effects.</p>
 <p align="center">No runtime, no daemon, no network calls: the skill is a protocol plus templates that
 any agent can follow on any platform.</p>
+<p align="center">It is the <b>lowest common layer</b> of cross-agent collaboration: any side may keep
+stricter local rules, and the stricter rule wins when they conflict.</p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue" /></a>
@@ -40,6 +42,13 @@ no context, no plan, no verification, no memory across sessions. Yuanban turns t
 It is not a collection of motivational tips. It is a protocol with templates that can be copied
 and executed in any agent.
 
+### Positioning
+
+Yuanban is the **lowest common layer** of cross-agent collaboration protocols. It sets the minimum
+bar for “how to get things done with AI”, so any agent or team can keep its own stricter local rules
+(tighter state-file conventions, stricter release gates, higher evidence requirements). When they
+conflict, the stricter rule wins.
+
 ## Core value
 
 | Advantage | Description |
@@ -47,7 +56,9 @@ and executed in any agent.
 | **Always-load, always light** | Active from session start; a 30-second task gate prevents ceremony on simple questions |
 | **Executable, not inspirational** | A fixed protocol unit: context brief, plan gate, milestones, verification, handover |
 | **Works across agents** | Platform-neutral Markdown; no runtime, daemon or network required |
+| **Lowest common layer** | Cross-agent minimum bar; any side keeps stricter local rules and the stricter one wins |
 | **Fixes the common failure modes** | Missing context, direct action without approval, unverified output, lost session state |
+| **Verifiable, not theatrical** | Acceptance criteria are checkable lists; unverified claims are labeled; evidence is real output |
 | **Focuses on the human** | The user owns direction, judgment and final review; the AI handles execution and memory |
 | **Compounds over time** | Lessons and effective practices are saved for the next collaboration (see yotta-learn) |
 | **Honest boundaries** | Collaboration productivity only; no business, pricing or operations topics |
