@@ -59,6 +59,7 @@ conflict, the stricter rule wins.
 | **Lowest common layer** | Cross-agent minimum bar; any side keeps stricter local rules and the stricter one wins |
 | **Fixes the common failure modes** | Missing context, direct action without approval, unverified output, lost session state |
 | **Verifiable, not theatrical** | Acceptance criteria are checkable lists; unverified claims are labeled; evidence is real output |
+| **Self-correcting on exceptions** | Detects common failure signals (acting without a plan, claiming completion without evidence, losing state) and stops to fix them with a one-line visible note |
 | **Focuses on the human** | The user owns direction, judgment and final review; the AI handles execution and memory |
 | **Compounds over time** | Lessons and effective practices are saved for the next collaboration (see yotta-learn) |
 | **Honest boundaries** | Collaboration productivity only; no business, pricing or operations topics |
@@ -75,8 +76,13 @@ AI:    Plan: 1) inventory endpoint usage, 2) build adapter, 3) dry-run, 4) live 
 User:  Approve.
 ```
 
-The detailed templates live in `references/collaboration_protocol.md`; common mistakes and
-fixes are in `references/faq.md`.
+If the AI drifts — acts without a plan, claims completion without evidence, or loses state
+across sessions — it stops and corrects itself with a one-line visible note. Say "run the
+yotta-partner check" any time you want it to self-audit.
+
+The detailed templates live in `references/collaboration_protocol.md`; exception and edge-case
+playbooks are in `references/exception_playbook.md`; full worked examples in
+`references/walkthroughs.md`; common mistakes and fixes are in `references/faq.md`.
 
 ## Installation
 
